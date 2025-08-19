@@ -19,10 +19,9 @@ import java.util.List;
 
 public class Cuestionario extends Activity {
     RadioGroup rgNivelResp1, rgNivelResp2, rgNivelResp3, rgNivelResp4, rgNivelResp5, rgNivelResp6,
-            rgNivelResp7, rgNivelResp8, rgNivelResp9, rgNivelResp10, rgFaseJornada, rgExigenciaFisica,
-            rgCargaMental;
+            rgNivelResp7, rgNivelResp8, rgNivelResp9, rgNivelResp10, rgFaseJornada;
 
-    CheckBox cbCalor, cbFrio, cbPostura, cbRuido, cbMovimiento, cbRepetitivas, cbNinguno;
+    CheckBox cbCalor, cbFrio, cbPostura, cbRuido, cbMovimiento, cbRepetitivas;
     EditText etNombre, etEdad, etSexo, etCargo, etResultPCognitiva;
     Button btnGuardar;
 
@@ -55,10 +54,7 @@ public class Cuestionario extends Activity {
 //        if (cbRepetitivas.isChecked()) {
 //            factoresSeleccionados.add("tareas-repetitivas");
 //        }
-        if (cbNinguno.isChecked()) {
-            factoresSeleccionados.clear(); // ignorar todo lo anterior si elige 'Ninguno'
-            factoresSeleccionados.add("ninguno");
-        }
+
     }
 
     @Override
@@ -71,7 +67,7 @@ public class Cuestionario extends Activity {
         cbRuido = findViewById(R.id.cbRuido);
         //cbMovimiento = findViewById(R.id.cbMovimiento);
         //cbRepetitivas = findViewById(R.id.cbRepetitivas);
-        cbNinguno = findViewById(R.id.cbNinguno);
+        //cbNinguno = findViewById(R.id.cbNinguno);
 
         etNombre    =  findViewById(R.id.etNombre);
         etEdad      =  findViewById(R.id.etEdad);
@@ -97,26 +93,10 @@ public class Cuestionario extends Activity {
         // CheckBoxes
         btnGuardar = findViewById(R.id.btnGuardarCuestionario);
 
-        cbNinguno.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked) {
-                cbCalor.setChecked(false);
-                cbFrio.setChecked(false);
-                cbPostura.setChecked(false);
-                cbRuido.setChecked(false);
-                cbMovimiento.setChecked(false);
-                cbRepetitivas.setChecked(false);
-            }
-        });
-        View.OnClickListener desmarcarNingunoListener = v -> {
-            if (cbNinguno.isChecked()) {
-                cbNinguno.setChecked(false);
-            }
-        };
-
-        cbCalor.setOnClickListener(desmarcarNingunoListener);
-        cbFrio.setOnClickListener(desmarcarNingunoListener);
+        //cbCalor.setOnClickListener(desmarcarNingunoListener);
+        //cbFrio.setOnClickListener(desmarcarNingunoListener);
         //cbPostura.setOnClickListener(desmarcarNingunoListener);
-        cbRuido.setOnClickListener(desmarcarNingunoListener);
+        //cbRuido.setOnClickListener(desmarcarNingunoListener);
         //cbMovimiento.setOnClickListener(desmarcarNingunoListener);
         //cbRepetitivas.setOnClickListener(desmarcarNingunoListener);
 

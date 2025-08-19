@@ -123,7 +123,7 @@ public class DeviceMenuActivity extends ConnectedActivity {
   //MQTT configuration
   String iotHubName = "ingenieriaiothub";
   // ECG_C740209, ECG_C740200, ECG_C740211
-  String deviceId_SN_G = "ECG_C740209"; // Extraido de azure IoT Explorer.
+  String deviceId_SN_G = "ECG_C740211"; // Extraido de azure IoT Explorer.
   String brokerUrl = "ssl://" + iotHubName + ".azure-devices.net:8883";
   String topic = "devices/" + deviceId_SN_G + "/messages/events/";
   String username_mqtt = iotHubName + ".azure-devices.net/" + deviceId_SN_G + "/api-version=2018-06-30";
@@ -135,7 +135,7 @@ public class DeviceMenuActivity extends ConnectedActivity {
   //String sasToken = "SharedAccessSignature sr=ingenieriaiothub.azure-devices.net%2Fdevices%2FECG_C740211&sig=SAALVClspdlhy7Pkotfe6ujCQroto9SD1aeXRdwpAaQ%3D&se=1772353766";
   //  C740209:
   //String sasToken = "SharedAccessSignature sr=ingenieriaiothub.azure-devices.net%2Fdevices%2FECG_C740209&sig=PHLD52rRxCypPeTxoEzLqUc8s77yHZkjeATJnUM5n5Y%3D&se=1791136107";
-  String sasToken = "SharedAccessSignature sr=ingenieriaiothub.azure-devices.net%2Fdevices%2FECG_C740209&sig=PHLD52rRxCypPeTxoEzLqUc8s77yHZkjeATJnUM5n5Y%3D&se=1791136107";
+  String sasToken = "SharedAccessSignature sr=ingenieriaiothub.azure-devices.net%2Fdevices%2FECG_C740211&sig=SAALVClspdlhy7Pkotfe6ujCQroto9SD1aeXRdwpAaQ%3D&se=1772353766";
   private boolean sendMQTT = false;
   private MqttAndroidClient mqttClient;
   private final MqttConnectOptions options = new MqttConnectOptions();

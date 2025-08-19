@@ -621,11 +621,11 @@
 <!--            android:layout_height="wrap_content"-->
 <!--            android:text="Tareas repetitivas" />-->
 
-        <CheckBox
-            android:id="@+id/cbNinguno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ninguno" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/cbNinguno"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ninguno" />-->
         <Button
             android:id="@+id/btnGuardarCuestionario"
             android:layout_width="match_parent"
