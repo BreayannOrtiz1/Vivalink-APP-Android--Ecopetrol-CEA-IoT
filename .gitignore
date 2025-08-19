@@ -1,0 +1,191 @@
+# ===============================================
+# ANDROID PROJECT GITIGNORE - OPTIMIZED
+# Solo conserva: archivos .java y .xml en Demo/src + configuración
+# ===============================================
+
+# ==========================
+# INCLUIR EXPLÍCITAMENTE (lo que SÍ queremos)
+# ==========================
+# Archivos .java y .xml en Demo/src (se incluyen automáticamente)
+# Archivos de configuración (se especifican abajo)
+
+# ==========================
+# BUILD Y CACHE FOLDERS
+# ==========================
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
+**/obj/
+**/libs/
+**/.gradle/
+**/gradle/wrapper/gradle-wrapper.jar
+
+# ==========================
+# ARCHIVOS PESADOS Y BINARIOS
+# ==========================
+# Archivos .hprof (perfiles de memoria)
+*.hprof
+
+# APKs y AABs compilados
+*.apk
+*.aab
+*.ap_
+
+# Archivos binarios nativos
+*.so
+*.a
+*.o
+
+# Archivos de imagen pesados (mantener solo los esenciales)
+*.psd
+*.ai
+*.sketch
+
+# Videos y audios pesados
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
+*.flac
+
+# Archivos ZIP y TAR
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# ==========================
+# ARCHIVOS TEMPORALES Y CACHE
+# ==========================
+# Archivos temporales del sistema
+*.tmp
+*.temp
+*.cache
+*~
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+*.out
+
+# Archivos de backup
+*.bak
+*.backup
+*.orig
+
+# ==========================
+# IDE Y HERRAMIENTAS
+# ==========================
+# Android Studio
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries/
+.idea/libraries/
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/misc.xml
+.idea/deploymentTargetDropDown.xml
+*.iws
+local.properties
+
+# IntelliJ IDEA
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.metadata
+bin/
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ==========================
+# ARCHIVOS DE DESARROLLO
+# ==========================
+# Archivos de profiling y debugging
+*.trace
+*.prof
+
+# Archivos de testing
+/captures/
+/test-results/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================
+# ARCHIVOS DE DEPLOYMENT
+# ==========================
+# Keystore (NUNCA subir claves privadas)
+*.keystore
+*.jks
+keystore.properties
+key.properties
+
+# Signing files
+release/
+signed/
+
+# ==========================
+# ARCHIVOS DE SISTEMA Y RED
+# ==========================
+# Archivos de configuración local
+config.properties
+secrets.properties
+*.properties.local
+
+# Archivos de red y certificados
+*.pem
+*.crt
+*.key
+*.p12
+
+# ==========================
+# MANTENER SOLO CONFIGURACIÓN ESENCIAL
+# ==========================
+# INCLUIR estos archivos de configuración:
+!build.gradle
+!settings.gradle
+!gradle.properties
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.properties
+!AndroidManifest.xml
+!proguard-rules.pro
+!consumer-rules.pro
+
+# Incluir archivos XML de resources
+!**/src/main/res/**/*.xml
+!**/src/debug/res/**/*.xml
+!**/src/release/res/**/*.xml
+
+# Incluir archivos Java específicamente en Demo/src
+!Demo/src/**/*.java
+!Demo/src/**/*.xml
+
+# Incluir archivos Java en estructura estándar de Android
+!**/src/main/java/**/*.java
+!**/src/debug/java/**/*.java
+!**/src/release/java/**/*.java
+!**/src/test/java/**/*.java
+!**/src/androidTest/java/**/*.java
+
+# ==========================
+# EXCLUIR TODO LO DEMÁS POR DEFECTO
+# ==========================
+# Esta regla excluye todo lo no especificado arriba
+# (se aplica al final para ser más restrictivo)
+
+# Nota: Git incluirá automáticamente los archivos .java y .xml
+# que no estén explícitamente excluidos por las reglas anteriores

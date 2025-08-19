@@ -1,0 +1,4 @@
+include ':base'
+include ':Demo'
+//android.useAndroidX=true
+//android.enableJetifier=true
