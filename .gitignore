@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ===============================================
 # ANDROID PROJECT GITIGNORE - OPTIMIZED
 # Solo conserva: archivos .java y .xml en Demo/src + configuración
@@ -189,3 +190,39 @@ secrets.properties
 
 # Nota: Git incluirá automáticamente los archivos .java y .xml
 # que no estén explícitamente excluidos por las reglas anteriores
+=======
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.aab
+*.apk
+output-metadata.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+>>>>>>> 00f5aab8b2eb911db0594670787bcd649adda8df
